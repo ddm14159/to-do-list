@@ -28,19 +28,19 @@
                                     </div>
                                     <div class="row bg-light" v-if="isShowDropdown[task.id]">
                                         <div class="col d-flex justify-content-between align-items-center">
-                                            <a href="#" @click.prevent="destroy(task)">
+                                            <button href="#" @click.prevent="destroy(task)">
                                                  Delete
-                                            </a>
+                                            </button>
                                         </div>
                                         <div class="col d-flex justify-content-between align-items-center">
-                                            <a href="#" @click.prevent="changeUrgency(task)">
+                                            <button @click.prevent="changeUrgency(task)">
                                                 Urgent
-                                            </a>
+                                            </button>
                                         </div>
                                         <div class="col d-flex justify-content-between align-items-center">
-                                            <a href="#" @click.prevent="changeCompletion(task)">
+                                            <button href="#" @click.prevent="changeCompletion(task)">
                                                 Complete
-                                            </a>
+                                            </button>
                                         </div>
                                     </div>
                                 </li>
@@ -80,19 +80,19 @@
                                     </div>
                                     <div class="row bg-light" v-if="isShowDropdown[task.id]">
                                         <div class="col d-flex justify-content-between align-items-center">
-                                            <a href="#" @click.prevent="destroy(task)">
+                                            <button href="#" @click.prevent="destroy(task)">
                                                 Delete
-                                            </a>
+                                            </button>
                                         </div>
                                         <div class="col d-flex justify-content-between align-items-center">
-                                            <a href="#" @click.prevent="changeUrgency(task)">
+                                            <button href="#" @click.prevent="changeUrgency(task)">
                                                 Normal
-                                            </a>
+                                            </button>
                                         </div>
                                         <div class="col d-flex justify-content-between align-items-center">
-                                            <a href="#" @click.prevent="changeCompletion(task)">
+                                            <button href="#" @click.prevent="changeCompletion(task)">
                                                 Complete
-                                            </a>
+                                            </button>
                                         </div>
                                     </div>
                                 </li>
