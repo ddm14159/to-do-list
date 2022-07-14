@@ -52,7 +52,7 @@
                                         <input
                                             v-model="newTask.name"
                                             v-on:keyup.enter="addTask"
-                                            placeholder="Enter todo name and press enter"
+                                            placeholder="Enter task name"
                                             type="text" class="form-control mr-3">
                                         <button @click.prevent="addTask" class="btn btn-primary">Add</button>
                                     </div>
