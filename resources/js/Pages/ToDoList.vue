@@ -147,7 +147,7 @@ export default {
         },
         addTask() {
             axios.post('/tasks', this.newTask)
-                .then((response) => {
+                .then(() => {
                     this.load();
                     this.newTask.name = undefined;
                 })
@@ -157,7 +157,7 @@ export default {
         },
         changeUrgency(task) {
             axios.patch(`/tasks/${task.id}`, {urgent: !task.urgent})
-                .then((response) => {
+                .then(() => {
                     this.load();
                 })
                 .catch((error) => {
@@ -166,7 +166,7 @@ export default {
         },
         changeCompletion(task) {
             axios.patch(`/tasks/${task.id}`, {completed: !task.completed})
-                .then((response) => {
+                .then(() => {
                     this.load();
                 })
                 .catch((error) => {
@@ -175,7 +175,7 @@ export default {
         },
         destroy(task) {
             axios.delete(`/tasks/${task.id}`)
-                .then((response) => {
+                .then(() => {
                     this.load();
                 })
                 .catch((error) => {
