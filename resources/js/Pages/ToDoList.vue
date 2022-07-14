@@ -20,7 +20,7 @@
                                     v-for="task in normal" :key="task.id"
                                     class="list-group-item">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <button   @click.prevent="isShowDropdown[task.id] = !isShowDropdown[task.id]">
+                                        <button @click.prevent="isShowDropdown[task.id] = !isShowDropdown[task.id]">
                                             <div v-bind:class="[task.completed ? underline : '']">
                                                 {{ task.name }}
                                             </div>
@@ -72,7 +72,7 @@
                                     v-for="task in urgent" :key="task.id"
                                     class="list-group-item">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <button   @click.prevent="isShowDropdown[task.id] = !isShowDropdown[task.id]">
+                                        <button @click.prevent="isShowDropdown[task.id] = !isShowDropdown[task.id]">
                                             <div v-bind:class="[task.completed ? underline : '']">
                                                 {{ task.name }}
                                             </div>
