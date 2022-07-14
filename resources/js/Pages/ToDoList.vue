@@ -29,21 +29,20 @@
                                     <div class="row bg-light" v-if="isShowDropdown[task.id]">
                                         <div class="col d-flex justify-content-between align-items-center">
                                             <a href="#" @click.prevent="destroy(task)">
-                                                <i class="fa fa-trash-o"></i> Delete
+                                                 Delete
                                             </a>
                                         </div>
                                         <div class="col d-flex justify-content-between align-items-center">
                                             <a href="#" @click.prevent="changeUrgency(task)">
-                                                <i class="fa fa-trash-o"></i> Urgent
+                                                Urgent
                                             </a>
                                         </div>
                                         <div class="col d-flex justify-content-between align-items-center">
                                             <a href="#" @click.prevent="changeCompletion(task)">
-                                                <i class="fa fa-trash-o"></i> Complete
+                                                Complete
                                             </a>
                                         </div>
                                     </div>
-
                                 </li>
                             </ul>
                             <section id="add-todo-form" class="my-3">
@@ -82,21 +81,20 @@
                                     <div class="row bg-light" v-if="isShowDropdown[task.id]">
                                         <div class="col d-flex justify-content-between align-items-center">
                                             <a href="#" @click.prevent="destroy(task)">
-                                                <i class="fa fa-trash-o"></i> Delete
+                                                Delete
                                             </a>
                                         </div>
                                         <div class="col d-flex justify-content-between align-items-center">
                                             <a href="#" @click.prevent="changeUrgency(task)">
-                                                <i class="fa fa-trash-o"></i> Normal
+                                                Normal
                                             </a>
                                         </div>
                                         <div class="col d-flex justify-content-between align-items-center">
                                             <a href="#" @click.prevent="changeCompletion(task)">
-                                                <i class="fa fa-trash-o"></i> Complete
+                                                Complete
                                             </a>
                                         </div>
                                     </div>
-
                                 </li>
                             </ul>
                         </div>
